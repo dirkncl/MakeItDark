@@ -191,9 +191,9 @@ function find_idx_in_array(arr, elem) {
 	};
 })();
 
-embedAsset("libs/palette.js")
-embedAsset("libs/bitmap.js")
-embedAsset("libs/tween.js")
+//embedAsset("libs/palette.js")
+//embedAsset("libs/bitmap.js")
+//embedAsset("libs/tween.js")
 
 onload = function(){
   var a = document.getElementsByTagName("a");
