@@ -876,7 +876,7 @@ var CanvasCycle = {
 			TweenManager.removeAll({ category: 'audio' });
 			
 			var ext = (ua.ff || ua.op) ? 'ogg' : 'mp3';
-			var track = this.audioTrack = new Audio( '../audio/' + scene.sound + '.' + ext );
+			var track = this.audioTrack = new Audio( './audio/' + scene.sound + '.' + ext );
 			track.volume = 0;
 			track.loop = true;
 			track.autobuffer = false;
