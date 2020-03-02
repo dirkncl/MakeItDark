@@ -35,5 +35,6 @@ function embedAsset(url){
       linkcss.href = urlsrc;
       document.head.appendChild(linkcss)
     }
+    URL.revokeObjectURL(urlsrc)
   })
 }
