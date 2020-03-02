@@ -251,7 +251,7 @@ var CanvasCycle = {
 		width: 640,
 		optionsWidth: 0,
 		height: 480 + 40,
-		scale: 1.0
+		scale: 2.0
 	},
 
 	init: function() {
@@ -507,9 +507,44 @@ var CanvasCycle = {
 		this.showLoading();
 		
 		var scene = scenes[idx];
+		 //scene.name
+		 //scene.month
+     //scene.scpt
      
 		var url = 'images/'+scene.name+'_'+scene.month+'_'+scene.scpt;
+    //var cont;
+		//var url = scene.name+'_'+scene.month+'_'+scene.scpt;
+		//var cont = saveToStorage(url);
+    //console.log(cont)
     imports(url);
+    /*getFile(url, function(data){
+      return eval.apply(window,[data])
+      
+    })*/
+    //eval.apply(window,[cont])
+    /*
+    var cnctenate;
+    getFile(file, function(datafile){
+      getFile(month, function(datamonth){
+        getFile(scpt, function(datascpt){
+          callback({
+            base:datafile,
+            palettes:datamonth,
+            timeline:datascpt
+            
+          })
+          
+        })
+      })
+    })
+    */
+    /*
+		var scr = document.createElement('SCRIPT');
+		scr.type = 'text/javascript';
+		scr.src = cont;
+		document.getElementsByTagName('HEAD')[0].appendChild(scr);
+    */
+    //localStorage.removeItem(url)
     
 	},
 	
